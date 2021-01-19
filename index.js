@@ -3,8 +3,7 @@ const inquirer = require('inquirer');
 
 
 
-inquirer   
-    .prompt ([
+inquirer.prompt ([
     
         {
             type: "input",
