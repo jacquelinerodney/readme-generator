@@ -36,6 +36,7 @@ inquirer
         type: "choice",
         message: "Choose a license for your project",
         name: "license",
+    
     },
     {
         type: "input",
@@ -69,16 +70,50 @@ inquirer
     } = data;
     const generateReadMe=`
     
+    ${title}
+
+    ## Description 
+
+        ${description}
+
+    ## Table of Contents
+
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Questions](#questions)
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    `
+
+    ##Installation
+
+    ${installation}
+
+    ## Usage
+    ${usage}
+
+    ## Credits
+
+    ${credits}
+
+    ## License
+
+    ${license}
+
+    ## Contributing
+
+    ${contributing}
+
+    ## Questions
+
+    Additional questions or concerns? 
+
+    GitHub: !(https://github.com/${gitHub})
+    \nemail: ${email}
+
+    `;
+
+    fs.writeFile("README.md", generateReadMe, (err) =>
+      err ? console.log(err) : console.log("Success!")
+    );
