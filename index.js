@@ -33,21 +33,21 @@ inquirer
         name: "credits",
     },
     {
-        typee: "choice",
+        type: "choice",
         message: "Choose a license for your project",
         name: "license",
     },
     {
-        typee: "input",
+        type: "input",
         message: "What are the guidelines for contributing to this project?",
         name: "contributing",
     },
     {
-        typee: "input",
+        type: "input",
         message: "What is your GitHub username?",
         name: "gitHub",
     },  {
-        typee: "input",
+        type: "input",
         message: "Insert your email address so others can reach you.",
         name: "email",
     }
@@ -55,3 +55,30 @@ inquirer
 
 ])
 
+.then(data)
+    const {
+        title, 
+        description,
+        installation,
+        usage,
+        credits,
+        license,
+        contributing,
+        gitHub,
+        email
+    } = data;
+    const generateReadMe=`
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    `
