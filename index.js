@@ -1,6 +1,5 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const licenses = require('./license')
 
 
 inquirer.prompt ([
@@ -70,7 +69,7 @@ inquirer.prompt ([
     const generateReadMe=`
     
     ${title}
-    ${$license[license].badge}
+  
 
     ## Description 
 
@@ -99,7 +98,7 @@ inquirer.prompt ([
 
     ## License
 
-    ${$license[license].notice}
+    ${license}
 
     ## Contributing
 
