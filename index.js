@@ -32,7 +32,7 @@ inquirer.prompt ([
         name: "credits",
     },
     {
-        type: "choice",
+        type: "input",
         message: "Choose a license for your project",
         name: "license",
     
@@ -55,7 +55,7 @@ inquirer.prompt ([
 
 ])
 
-.then(data)
+.then((data) => {
     const {
         title, 
         description,
@@ -114,5 +114,5 @@ inquirer.prompt ([
     `;
 
     fs.writeFile("README.md", generateReadMe, (err) =>
-      err ? console.log(err) : console.log("Success!")
-    );
+      err ? console.log(err) : console.log("Success!"))
+});
