@@ -20,7 +20,7 @@ Clone repo from GitHub, run npm install & install inquirer.
 ### Usage
 By running node index.js in the command line users will be prompted a series of questions. User input will then be used to generate a ReadMe file with the same information.
 
-Link to Demo Video: <iframe src="https://drive.google.com/file/d/1gdcQ-0O05A3hQZV14Tu1kwkdA99dCI2r/preview" width="640" height="480"></iframe>
+Link to Demo Video: https://drive.google.com/file/d/1gdcQ-0O05A3hQZV14Tu1kwkdA99dCI2r/view
 
 
 
